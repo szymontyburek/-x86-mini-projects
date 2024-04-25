@@ -2,9 +2,13 @@ section .data
 
 section .text
 
-global _start
+global main
 
-_start:
+add_two:
+        add eax,ebx
+        ret
+
+main:
         mov eax,4
         mov ebx,1
         call add_two
@@ -12,6 +16,4 @@ _start:
         mov eax,1
         int 80h
 
-add_two:
-        add eax,ebx
-        ret
+
