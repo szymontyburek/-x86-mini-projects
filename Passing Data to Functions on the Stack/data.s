@@ -4,12 +4,6 @@ section .text
 
 global main
 
-main:
-        push 4
-        push 1
-        call add_two
-        mov ebx,eax
-
 add_two:
         push ebp
         mov ebp,esp
@@ -18,3 +12,11 @@ add_two:
         add eax,ebx
         pop ebp
         ret
+
+main:
+        push 4
+        push 1
+        call add_two
+        mov ebx,eax
+        mov eax,1
+        int 80h
