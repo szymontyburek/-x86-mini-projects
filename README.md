@@ -1,5 +1,5 @@
 What I learned to do:
-- set up a virtual machine using VirtualBox
+- set up a virtual machine running Ubuntu using VirtualBox
 - assemble and run x86 code using NASM
 - debug x86 using gdb
 - execute basic mathematical procedures
